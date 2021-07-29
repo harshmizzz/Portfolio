@@ -1,0 +1,50 @@
+.projects {
+    padding-top: 15vh;
+    background-color: black;
+    min-height: 100vh;
+    height: auto;
+}
+
+.projectsbox {
+    margin-top: 100px;
+    color: whitesmoke;
+
+}
+
+
+.projectsbox>h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
+
+.Projectscard {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Projectscard>a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.Projectscard>h2 {
+    color: whitesmoke;
+}
+
+.Projectscard>a>img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .projects {
+        padding-top: 20vh;
+    }
+}

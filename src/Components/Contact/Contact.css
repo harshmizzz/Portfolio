@@ -1,0 +1,104 @@
+.contact {
+    padding-top: 10vh;
+    background-color: black;
+    color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contactHeading {
+    margin-top: 30px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contactLine {
+    margin-top: 5px;
+    height: 5px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: tomato;
+}
+
+.contactBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.contactLeft>h3 {
+    font-size: 1.4rem;
+    color: rgba(144, 252, 168, 0.856);
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.contactRight>form>div {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form>div>h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contactRight>form>div>input {
+    width: 20vw;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgba(241, 237, 237, 0.082);
+}
+
+.contactRight>form>button {
+    margin-top: 30px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.contactRight>form>button:hover {
+    transition: .5s;
+    background-color: rgba(121, 121, 121, 0.555);
+    color: whitesmoke;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .contactBox {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contactLeft {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactLeft > h3 {
+        
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,183 @@
+.about {
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    color: whitesmoke;
+}
+
+.aboutHeading {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutHeading>h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color:#99d3d6e8;
+}
+
+
+.aboutline {
+    margin-top: 5px;
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: tomato;
+}
+
+.aboutInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.aboutprofile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: rgba(128, 128, 128, 0.651);
+    border-radius: 100px;
+    gap: 100px;
+    height: 40vh;
+
+}
+
+.aboutprofile>img {
+    width: 200px;
+    height: 50vh;
+}
+
+.aboutcontent {
+    margin-left: 10px;
+}
+
+.aboutContentHeading>h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;color:#40f377f2;
+}
+
+.aboutContentBig {
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+.aboutContentBig>p {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.aboutContentSmall {
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+}
+
+.aboutContentSmallBox {
+    display: flex;
+    margin: 3px;
+}
+
+.aboutContentSmallBox>p {
+    color: grey;
+    font-weight: 600;
+}
+
+.aboutContentSmallBox>span {
+    margin-left: 5px;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .aboutInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutContentHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutContentHeading>h2 {
+        font-size: 1rem;
+    }
+
+    .aboutcontent {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .aboutContentBig {
+        display: flex;
+        margin: 0;
+        margin-left: 20px;
+        width: 95vw;
+        overflow-wrap: break-word;
+        padding: 0;
+    }
+
+    .aboutContentBig>p {
+        overflow-wrap: break-word;
+        font-size: 1rem;
+    }
+
+    .aboutContentSmall {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .aboutContentSmallBox {
+        margin: 0;
+    }
+
+    .aboutContentSmallBox>span {
+        margin-left: 2px;
+        font-size: .8rem;
+    }
+
+    .aboutprofile {
+        margin-top: 100px;
+    }
+}
+
+.aboutprofile>button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: transparent;
+}
+
+.aboutprofile>button>a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.aboutprofile>button:hover {
+    height: 50px;
+    width: 140px;
+    background-color: rgba(59, 55, 55, 0.685);
+    transition: .5s;
+    color: green;
+}

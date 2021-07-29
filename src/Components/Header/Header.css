@@ -1,0 +1,49 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+}
+
+.headerLeft {
+    margin-left: 30px;
+    font-size: 2rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.headerLeft>h2 {
+    transition: color .2s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.headerLeft>h2:hover {
+
+    color: rgba(253, 191, 183, 0.959);
+}
+
+.headerRight {
+    margin-right: 30px;
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.headerRight>h3 {
+    transition: color .2s ease-in;
+    cursor: pointer;
+}
+
+.headerRight>h3:hover {
+    color: rgba(111, 255, 176, 0.705);
+}
+
+
+.hamburger {
+    color: #fff;
+}
