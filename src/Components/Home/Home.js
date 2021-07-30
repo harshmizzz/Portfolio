@@ -1,12 +1,17 @@
 import React from "react";
 import "./Home.css";
-import profile from "../../Images/profile.png";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 function Home() {
   return (
     <div className="home">
       <div className="left">
-        <img src={profile} alt="profile" />
+        <LazyLoadImage
+          effect="blur"
+          className="imgprofile imgprofilemobile"
+          src="/Images/profile.png"
+          alt="profile"
+        />
       </div>
       <div className="right">
         <div className="Homeheading">

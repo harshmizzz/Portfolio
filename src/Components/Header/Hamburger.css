@@ -4,8 +4,10 @@
 
 .hamburgerOpen {
     position: absolute;
-    right: 0;
+    z-index: 10000;
+    right: -10px;
     display: flex;
+    top: 20px;
     gap: 5px;
     align-items: center;
     flex-direction: column;
@@ -20,8 +22,8 @@
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
-    background: rgba(0, 0, 0, 0.445);
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.185);
+    border-radius: 50px;
 }
 
 .hamburgerOpen>h3 {

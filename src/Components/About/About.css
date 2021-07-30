@@ -45,9 +45,8 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
-    background-color: rgba(128, 128, 128, 0.651);
     border-radius: 100px;
-    gap: 100px;
+    gap: 50px;
     height: 40vh;
 
 }
@@ -55,6 +54,7 @@
 .aboutprofile>img {
     width: 200px;
     height: 50vh;
+    border-radius: 50%;
 }
 
 .aboutcontent {
@@ -143,7 +143,9 @@
 
     .aboutContentSmall {
         margin: 0;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
 
     .aboutContentSmallBox {
@@ -157,12 +159,18 @@
 
     .aboutprofile {
         margin-top: 100px;
+        gap: 50px;
+    }
+
+    .aboutprofile>:no-button{
+        margin: 0;
     }
 }
 
 .aboutprofile>button {
     width: 120px;
     height: 50px;
+    margin-left: 10px;
     border-radius: 10px;
     border: 1px solid grey;
     background: transparent;

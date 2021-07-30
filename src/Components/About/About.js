@@ -1,7 +1,5 @@
 import React from "react";
 import "./About.css";
-import resume from "../../Images/Resume-Harsh-Mishra.pdf";
-import profile from "../../Images/profile.png";
 function About() {
   return (
     <div className="about">
@@ -11,9 +9,9 @@ function About() {
       </div>
       <div className="aboutInfo">
         <div className="aboutprofile">
-          <img src={profile} alt="" />
+          <img src="/Images/profile.png" alt="" />
           <button>
-            <a href={resume} target="_blank">
+            <a href="/Images/Resume-Harsh-Mishra.pdf" target="_blank">
               Resume
             </a>
           </button>

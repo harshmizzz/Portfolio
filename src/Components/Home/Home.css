@@ -13,12 +13,10 @@
     align-items: center;
     justify-content: space-between;
 }
-
-.left>img {
+.imgprofile {
     max-width: 500px;
     max-height: 100vh;
     height: 90vh;
-    width: 80vw;
     filter: grayscale(100%);
     opacity: .5;
     vertical-align: middle;
@@ -126,9 +124,19 @@
         width: 100vw;
     }
 
-    .left>img {
-        height: 50vh;
-        border-radius: 50%;
+    .left{
+        background: url(./profile.png);
+         width: 33vh;
+         height: 50vh;
+         
+         border-radius: 50%;
+         background-size: cover;
+         background-repeat: no-repeat;
+         filter: grayscale(100%);
+    }
+
+    .imgprofile {
+        display: none;
     }
 
     .Homeheading {
@@ -146,6 +154,10 @@
     .Homeheading>h1 {
         margin: 0;
         font-size: 2rem;
+    }
+
+    .HomeSocial{
+        margin-left: 0;
     }
 
     .HomeSkills {

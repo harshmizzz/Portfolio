@@ -1,9 +1,10 @@
 import React from "react";
 import "./Projects.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
@@ -78,8 +79,13 @@ function Projects() {
                     <SwiperSlide key={user.id}>
                       <div className="Projectscard">
                         <h2>{user.name}</h2>
-                        <a href={user.url} target="_blank">
-                          <img src={user.image} alt="" />
+                        <a href={user.url} rel="noreferrer" target="_blank">
+                          <LazyLoadImage
+                            effect="blur"
+                            className="siteimage"
+                            src={user.image}
+                            alt=""
+                          />
                         </a>
                       </div>
                     </SwiperSlide>
@@ -100,8 +106,13 @@ function Projects() {
                     <SwiperSlide key={user.id}>
                       <div className="Projectscard">
                         <h2>{user.name}</h2>
-                        <a href={user.url} target="_blank">
-                          <img src={user.image} alt="" />
+                        <a href={user.url} rel="noreferrer" target="_blank">
+                          <LazyLoadImage
+                            effect="blur"
+                            className="siteimage"
+                            src={user.image}
+                            alt=""
+                          />
                         </a>
                       </div>
                     </SwiperSlide>
