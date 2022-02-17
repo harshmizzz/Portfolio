@@ -11,7 +11,7 @@ function About() {
         <div className="aboutprofile">
           <img src="/Images/profile.png" alt="" />
           <button>
-            <a href="/Images/Resume-Harsh-Mishra.pdf" target="_blank">
+            <a href="/Images/Resume.pdf" target="_blank">
               Resume
             </a>
           </button>
